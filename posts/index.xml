@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://doafirst.github.io/hugo_website/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Aug 2021 22:11:20 +0800</lastBuildDate><atom:link href="https://doafirst.github.io/hugo_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://doafirst.github.io/hugo_website/posts/hugo/</link>
+      <pubDate>Tue, 10 Aug 2021 22:11:20 +0800</pubDate>
+      
+      <guid>https://doafirst.github.io/hugo_website/posts/hugo/</guid>
+      <description>Git path from git hub git clone https://github.com/doafirst/hugo.git ./sub_update.sh 1. Hugo install on ubuntu sudo snap install hugo --channel=extended 2. New Site Hugo hugo new site hugo_sample cd hugo_sample 3. Add theme cd hugo_sample/ git init git submodule add https://github.com/mivinci/hugo-theme-minima.git themes/minima cp themes/minima/exampleSite/config.toml . #or echo &amp;#39;theme = &amp;#34;minima&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml Submodule Commands
+#First time add theme method git submodule add https://github.com/AmazingRise/hugo-theme-diary.git themes/diary #If .gitmodules theme has already exist. but folder is empty git submodule init git submodule update #or single update git submodule update --remote themes/diary 4.</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://doafirst.github.io/hugo_website/posts/hello/</link>
+      <pubDate>Tue, 10 Aug 2021 22:09:20 +0800</pubDate>
+      
+      <guid>https://doafirst.github.io/hugo_website/posts/hello/</guid>
+      <description>Hello World </description>
+    </item>
+    
+  </channel>
+</rss>

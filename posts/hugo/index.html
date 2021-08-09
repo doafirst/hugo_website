@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Hugo" />
+<meta property="og:description" content="Git path from git hub git clone https://github.com/doafirst/hugo.git ./sub_update.sh 1. Hugo install on ubuntu sudo snap install hugo --channel=extended 2. New Site Hugo hugo new site hugo_sample cd hugo_sample 3. Add theme cd hugo_sample/ git init git submodule add https://github.com/mivinci/hugo-theme-minima.git themes/minima cp themes/minima/exampleSite/config.toml . #or echo &#39;theme = &#34;minima&#34;&#39; &gt;&gt; config.toml Submodule Commands
+#First time add theme method git submodule add https://github.com/AmazingRise/hugo-theme-diary.git themes/diary #If .gitmodules theme has already exist. but folder is empty git submodule init git submodule update #or single update git submodule update --remote themes/diary 4." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://doafirst.github.io/hugo_website/posts/hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-10T22:11:20+08:00" />
+<meta property="article:modified_time" content="2021-08-10T22:11:20+08:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo"/>
+<meta name="twitter:description" content="Git path from git hub git clone https://github.com/doafirst/hugo.git ./sub_update.sh 1. Hugo install on ubuntu sudo snap install hugo --channel=extended 2. New Site Hugo hugo new site hugo_sample cd hugo_sample 3. Add theme cd hugo_sample/ git init git submodule add https://github.com/mivinci/hugo-theme-minima.git themes/minima cp themes/minima/exampleSite/config.toml . #or echo &#39;theme = &#34;minima&#34;&#39; &gt;&gt; config.toml Submodule Commands
+#First time add theme method git submodule add https://github.com/AmazingRise/hugo-theme-diary.git themes/diary #If .gitmodules theme has already exist. but folder is empty git submodule init git submodule update #or single update git submodule update --remote themes/diary 4."/>
+
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
+  <title>
+    
+    My New Hugo Site - Hugo
+    
+  </title>
+  
+  <link rel="shortcut icon" href="/hugo_website/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+  
+  
+  
+  <link rel="stylesheet" href="/hugo_website/minima.1628627951.css">
+
+  <script src="/js/main.js"></script>
+</head>
+<script>
+  try {
+    if (!('theme' in localStorage)) {
+      localStorage.theme = window.matchMedia('(prefer-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.querySelector('html').classList.add(localStorage.theme);
+  } catch (e) {
+    console.error(e);
+  }
+</script>
+<body>
+  <header>
+  <h1 class="row gap-1 nowrap">
+    <div id="theme-switcher" class="btn lg-1"></div>
+    My New Hugo Site
+  </h1>
+  <nav class="row gap-1">
+  
+  </nav>
+  <hr>
+</header>
+  
+  
+
+<main>
+	<h1>Hugo</h1>
+	<div class="sm-1 mtb-1">
+		Posted at &mdash; Aug 10, 2021
+		
+		<span class="tag ml-1">
+			DRAFT
+		</span>
+		
+	</div>
+	<p></p>
+	<article class="md">
+		<h3 id="git-path-from-git-hub">Git path from git hub</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/doafirst/hugo.git
+./sub_update.sh
+</code></pre></div><h3 id="1-hugo-install-on-ubuntu">1. Hugo install on ubuntu</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install hugo --channel<span style="color:#f92672">=</span>extended
+</code></pre></div><h3 id="2--new-site-hugo">2.  New Site Hugo</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site hugo_sample
+cd hugo_sample
+</code></pre></div><p><img src="Screenshot_from_2021-08-09_10-45-04.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Screenshot_from_2021-08-09_10-45-04.png"></p>
+<h3 id="3-add-theme">3. Add theme</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd hugo_sample/
+git init 
+git submodule add https://github.com/mivinci/hugo-theme-minima.git themes/minima
+cp themes/minima/exampleSite/config.toml .
+<span style="color:#75715e">#or</span>
+echo <span style="color:#e6db74">&#39;theme = &#34;minima&#34;&#39;</span> &gt;&gt; config.toml
+
+</code></pre></div><p>Submodule Commands</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#First time add theme method</span>
+git submodule add https://github.com/AmazingRise/hugo-theme-diary.git themes/diary
+
+<span style="color:#75715e">#If .gitmodules theme has already exist. but folder is empty</span>
+git submodule init
+git submodule update
+<span style="color:#75715e">#or single update</span>
+git submodule update --remote themes/diary
+</code></pre></div><h3 id="4-new-post">4. New Post</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/hello.md
+cat content/posts/hello.md
+</code></pre></div><h3 id="5-server-start">5. Server start</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
+</code></pre></div><p><img src="Screenshot_from_2021-08-09_10-52-28.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Screenshot_from_2021-08-09_10-52-28.png"></p>
+<p><img src="Screenshot_from_2021-08-09_10-56-41.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Screenshot_from_2021-08-09_10-56-41.png"></p>
+<h3 id="6-generate-github-page-content">6. Generate Github Page Content</h3>
+<p>Set correct baseURL address in <strong>config.toml</strong> file
+My github page path is <a href="https://doafirst.github.io/hugo_website">https://doafirst.github.io/hugo_website</a></p>
+<p><img src="Untitled.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled.png"></p>
+<p>Hugo build</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo -d ../hugo_website -D
+<span style="color:#75715e"># -D, --buildDrafts            include content marked as draft</span>
+<span style="color:#75715e"># -d, --destination string     filesystem path to write files to</span>
+cd ../hugo_website
+ls 
+<span style="color:#75715e">#Check index.html existed</span>
+</code></pre></div><h3 id="7-create-new-repository">7. Create new repository</h3>
+<p><img src="Untitled%201.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled%201.png"></p>
+<p>Git Path : <a href="https://github.com/doafirst/hugo_website.git">https://github.com/doafirst/hugo_website.git</a></p>
+<h3 id="8-push-hugo_website--folder-to-github">8. Push hugo_website  folder to github</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd hugo_website
+git init 
+git add .
+git commit 
+git add remote origin https://github.com/doafirst/hugo_website.git
+git push origin master 
+</code></pre></div><h3 id="９-github-page-enable">９. Github Page Enable</h3>
+<p>hugo_website Repository → Settings → Page →Select Branch &amp; Save</p>
+<p><img src="Untitled%202.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled%202.png"></p>
+<p><img src="Untitled%203.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled%203.png"></p>
+<h3 id="lesson-learn-1-">Lesson Learn 1 :</h3>
+<p>###Git clone repository &ldquo;themes&rdquo; folder empty</p>
+<p>After git clone and hugo build , and some error message showed.</p>
+<p><img src="Untitled%204.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled%204.png"></p>
+<p>Build fail reason is themes folder empty , there is nothing in <strong>diary</strong> folder</p>
+<p><img src="Untitled%205.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled%205.png"></p>
+<p>I use git submodule to clone themes , therefore the themes submodules will not upload to git repository.</p>
+<p><img src="Untitled%206.png" alt="Hugo%20ea8f1a335d184aa69cb6f1aee434867d/Untitled%206.png"></p>
+
+	</article>
+</main>
+
+
+
+
+
+
+
+
+  <footer class="row row-mob al-c-mob col-rev-mob sm-2-mob jc-bt mtb-2">
+  <p class="c-tag">
+     |
+    <a href="https://github.com/mivinci/hugo-theme-minima" target="_blank" rel="noopener noreferrer">Minima</a> on
+    <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a>
+  </p>
+  <p class="row gap-0_5">
+    
+  </p>
+</footer>
+</body>
+</html>
